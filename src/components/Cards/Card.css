@@ -1,0 +1,48 @@
+.card{
+    color: blue;
+    padding: 10px;
+    height: 15vh;
+    width: 25vw;
+    /* min-width: 250px; */
+    background-color: white;
+    box-shadow: 2px 2px 12px rgba(81,75,75,0.10);
+    transition: background-color 300ms ease-in;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    font-size: calc(6px+1.5vw);  
+    margin: 5px;  
+}
+.nameClass{
+    font-size: calc(6px + 0.9vw);
+    
+}
+
+.card:hover{
+    background-color: #5646FF;
+    cursor: pointer;
+    color: white;
+    transform: scale(1.01);
+}
+.ptag{
+    color: rgb(20, 20, 20);
+    font-size:calc(4px + 0.5vw);
+}
+.iconTag{
+    color: rgb(209, 192, 192);
+}
+.card:hover>div>.ptag{
+    color: white;
+}
+.card:hover>.iconTag{
+    color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .card{
+      
+        width: 100vw;
+
+    }
+}
