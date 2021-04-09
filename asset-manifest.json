@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/database-dashboard/static/css/main.d3ea7e59.chunk.css",
+    "main.js": "/database-dashboard/static/js/main.ba9ac884.chunk.js",
+    "main.js.map": "/database-dashboard/static/js/main.ba9ac884.chunk.js.map",
+    "runtime-main.js": "/database-dashboard/static/js/runtime-main.cebf3dbd.js",
+    "runtime-main.js.map": "/database-dashboard/static/js/runtime-main.cebf3dbd.js.map",
+    "static/js/2.9a10e9af.chunk.js": "/database-dashboard/static/js/2.9a10e9af.chunk.js",
+    "static/js/2.9a10e9af.chunk.js.map": "/database-dashboard/static/js/2.9a10e9af.chunk.js.map",
+    "static/js/3.28c2deec.chunk.js": "/database-dashboard/static/js/3.28c2deec.chunk.js",
+    "static/js/3.28c2deec.chunk.js.map": "/database-dashboard/static/js/3.28c2deec.chunk.js.map",
+    "index.html": "/database-dashboard/index.html",
+    "static/css/main.d3ea7e59.chunk.css.map": "/database-dashboard/static/css/main.d3ea7e59.chunk.css.map",
+    "static/js/2.9a10e9af.chunk.js.LICENSE.txt": "/database-dashboard/static/js/2.9a10e9af.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cebf3dbd.js",
+    "static/js/2.9a10e9af.chunk.js",
+    "static/css/main.d3ea7e59.chunk.css",
+    "static/js/main.ba9ac884.chunk.js"
+  ]
+}
