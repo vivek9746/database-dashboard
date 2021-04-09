@@ -1,5 +1,5 @@
 .card{
-    color: blue;
+    color: #5646FF;
     padding: 10px;
     height: 15vh;
     width: 25vw;
@@ -11,12 +11,18 @@
     align-items: center;
     /* flex-direction: column; */
     justify-content: space-between;
-    font-size: calc(6px+1.5vw);  
+    font-size: calc(6px+1vw);  
     margin: 5px;  
 }
 .nameClass{
-    font-size: calc(6px + 0.9vw);
+    font-size: calc(6px + 0.8vw);
+    margin-bottom: 5px;
     
+}
+.timeClass{
+    margin-top: 10px;
+    color: rgb(87, 87, 87);
+    font-size:10pt ;
 }
 
 .card:hover{
@@ -36,6 +42,10 @@
     color: white;
 }
 .card:hover>.iconTag{
+    color: white;
+}
+
+.card:hover>div>.timeClass{
     color: white;
 }
 

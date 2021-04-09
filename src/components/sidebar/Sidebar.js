@@ -8,15 +8,17 @@ import Typography from '@material-ui/core/Typography';
 // import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Collapsible from 'react-collapsible';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faCloud } from '@fortawesome/free-solid-svg-icons'
 import { faMicrochip } from '@fortawesome/free-solid-svg-icons'
+import { faDatabase } from '@fortawesome/free-solid-svg-icons'
+import { faServer } from '@fortawesome/free-solid-svg-icons'
 
 const useStyles = makeStyles((theme) => ({
     root: {
       width: '100%',
     },
     heading: {
-      fontSize: theme.typography.pxToRem(15),
+      fontSize: theme.typography.pxToRem(14),
       fontWeight: theme.typography.fontWeightRegular,
     },
     acc:{
@@ -31,7 +33,8 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor:'black',
     },
     np:{
-        paddingLeft:"0px"
+        paddingLeft:"0px",
+        paddingRight:'0px'
     }
     
   }));
@@ -61,7 +64,7 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>Compute</Typography>
+                        <Typography className={classes.heading}>Compute</Typography>
                     </AccordionSummary>
                     <AccordionDetails className={classes.np+" "+"acc"}>
                         <ul>
@@ -106,7 +109,7 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>Block Storage</Typography>
+                        <Typography className={classes.heading}>Block Storage</Typography>
                     </AccordionSummary>
                     <AccordionDetails className={classes.np+" "+"acc"}>
                         <ul>
@@ -130,7 +133,7 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>File Storage</Typography>
+                        <Typography className={classes.heading}>File Storage</Typography>
                     </AccordionSummary>
                     <AccordionDetails className={classes.np+" "+"acc"}>
                         <ul>
@@ -154,7 +157,7 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>Networking</Typography>
+                        <Typography className={classes.heading}>Networking</Typography>
                     </AccordionSummary>
                     <AccordionDetails className={classes.np+" "+"acc"}>
                         <ul>
@@ -171,7 +174,7 @@ function Sidebar() {
                     </AccordionDetails>
                 </Accordion>
                 </div>
-                <div style={{color:'white',marginTop:'1vw',display:'flex',justifyContent:"flex-start"}}><FontAwesomeIcon style={{color:'white',margin:'0px 10px'}} icon={faMicrochip}></FontAwesomeIcon> <Typography style={{fontSize:'1vw'}}>Oracle Database</Typography></div>
+                <div style={{color:'white',marginTop:'1vw',display:'flex',justifyContent:"flex-start"}}><FontAwesomeIcon style={{color:'white',margin:'0px 10px'}} icon={faCloud}></FontAwesomeIcon> <Typography style={{fontSize:'1vw'}}>Oracle Database</Typography></div>
                 <div className={classes.acc}>
                 <Accordion className={classes.acc+" "+"acc"+" "+"other"}>
                     <AccordionSummary className="acc"
@@ -179,7 +182,7 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>Overview</Typography>
+                        <Typography className={classes.heading}>Overview</Typography>
                     </AccordionSummary>
 
                 </Accordion>
@@ -191,7 +194,7 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>Autonomous Data Warehouse</Typography>
+                        <Typography className={classes.heading}>Autonomous Data Warehouse</Typography>
                     </AccordionSummary>
          
                 </Accordion>
@@ -204,7 +207,7 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>Autonomous JSON Database</Typography>
+                        <Typography className={classes.heading}>Autonomous JSON Database</Typography>
                     </AccordionSummary>
                    
                 </Accordion>
@@ -217,7 +220,7 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>Autonomous Transaction Processing</Typography>
+                        <Typography className={classes.heading}>Autonomous Transaction Processing</Typography>
                     </AccordionSummary>
                    
                 </Accordion>
@@ -230,7 +233,7 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>Bare Metal, VM, Exadata</Typography>
+                        <Typography className={classes.heading}>Bare Metal, VM, Exadata</Typography>
                     </AccordionSummary>
                    
                 </Accordion>
@@ -244,7 +247,7 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>Exadata Cloud@Customer</Typography>
+                        <Typography className={classes.heading}>Exadata Cloud@Customer</Typography>
                     </AccordionSummary>
                    
                 </Accordion>
@@ -258,12 +261,12 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>External Database</Typography>
+                        <Typography className={classes.heading}>External Database</Typography>
                     </AccordionSummary>
                    
                 </Accordion>
                 </div>
-                <div style={{color:'white',marginTop:'1vw',display:'flex',justifyContent:"flex-start"}}><FontAwesomeIcon style={{color:'white',margin:'0px 10px'}} icon={faMicrochip}></FontAwesomeIcon> <Typography style={{fontSize:'1vw'}}>Databases</Typography></div>
+                <div style={{color:'white',marginTop:'1vw',display:'flex',justifyContent:"flex-start"}}><FontAwesomeIcon style={{color:'white',margin:'0px 10px'}} icon={faDatabase}></FontAwesomeIcon> <Typography style={{fontSize:'10pt'}}>Databases</Typography></div>
                 <div className={classes.acc}>
                 <Accordion className={classes.acc+" "+"acc"+" "+"other"}>
                     <AccordionSummary className="acc"
@@ -271,7 +274,7 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>MySQL</Typography>
+                        <Typography className={classes.heading}>MySQL</Typography>
                     </AccordionSummary>
                     <AccordionDetails className={classes.np+" "+"acc"}>
                         <ul>
@@ -296,13 +299,13 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>NoSQL</Typography>
+                        <Typography className={classes.heading}>NoSQL</Typography>
                     </AccordionSummary>
                    
                 </Accordion>
                 </div>
 
-                <div style={{color:'white',marginTop:'1vw',display:'flex',justifyContent:"flex-start"}}><FontAwesomeIcon style={{color:'white',margin:'0px 10px'}} icon={faMicrochip}></FontAwesomeIcon> <Typography style={{fontSize:'1vw'}}>Database Related Service</Typography></div>
+                <div style={{color:'white',marginTop:'1vw',display:'flex',justifyContent:"flex-start"}}><FontAwesomeIcon style={{color:'white',margin:'0px 10px'}} icon={faServer}></FontAwesomeIcon> <Typography style={{fontSize:'10pt'}}>Database Related Service</Typography></div>
                 <div className={classes.acc}>
                 <Accordion className={classes.acc+" "+"acc"+" "+"other"}>
                     <AccordionSummary className="acc"
@@ -310,7 +313,7 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>APEX Application Development</Typography>
+                        <Typography className={classes.heading}>APEX Application Development</Typography>
                     </AccordionSummary>
                     <AccordionDetails className={classes.np+" "+"acc"}>
                         <ul>
@@ -335,7 +338,7 @@ function Sidebar() {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography>Data Safe</Typography>
+                        <Typography className={classes.heading}>Data Safe</Typography>
                     </AccordionSummary>
                    
                 </Accordion>

@@ -22,7 +22,7 @@
 }
 .iconContainer{
     height: 100%;
-    background-color: blue;
+    background-color: #5646FF;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@
 }
 .navigation>div>input{
     height: 100%;
-    font-size: 1.2em;
+    font-size: calc(16pt+1.2vw);
     padding: 0;
     width: 47vw;
     background-color: rgb(255, 255, 255);
@@ -55,6 +55,7 @@
     box-shadow: 2px 2px 12px rgba(81,75,75,0.10);
     outline: none;
     border: none;
+
    
 }
 

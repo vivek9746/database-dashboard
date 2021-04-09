@@ -8,7 +8,7 @@ function Card(props) {
             <div>
             <p className="ptag">{props.tool}</p>
             <p className="nameClass">{props.name}</p>
-            <p>{props.time}</p>
+            <p className="timeClass">{props.time}</p>
             </div>
             <div className="iconTag">
                 <FontAwesomeIcon icon={props.icon}></FontAwesomeIcon>
