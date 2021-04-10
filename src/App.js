@@ -7,6 +7,8 @@ import Sidebar from './components/sidebar/Sidebar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCompass, faHamburger, faSearch, faShip } from '@fortawesome/free-solid-svg-icons'
 import Allcards from "./components/Cards/Allcards";
+import Linegraph from "./components/Chart/Linegraph";
+import Newgraph from "./components/Chart/Newgraph";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -60,7 +62,9 @@ function showSidebar(){
       { showSidebarFlag? <Sidebar/> :showSidebarFlag===0 && windowDimensions.width>500? <Sidebar/>:''}
 
       <div className="combine">  
-      <Allcards/>    
+      <Allcards/> 
+      {/* <Linegraph/>    */}
+      {/* <Newgraph/> */}
       {/* <CombinedCards/> */}
       {/* <Card name="New Name"/> */}
       </div>

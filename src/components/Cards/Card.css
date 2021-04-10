@@ -15,7 +15,7 @@
     margin: 5px;  
 }
 .nameClass{
-    font-size: calc(6px + 0.8vw);
+    font-size: calc(16px);
     margin-bottom: 5px;
     
 }
@@ -33,7 +33,7 @@
 }
 .ptag{
     color: rgb(20, 20, 20);
-    font-size:calc(4px + 0.5vw);
+    font-size:calc(6px + 0.5vw);
 }
 .iconTag{
     color: rgb(209, 192, 192);

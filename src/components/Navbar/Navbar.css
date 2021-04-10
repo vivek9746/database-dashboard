@@ -43,7 +43,7 @@
 }
 .navigation>div>input{
     height: 100%;
-    font-size: calc(16pt+1.2vw);
+    font-size: calc(6pt+1.2vw);
     padding: 0;
     width: 47vw;
     background-color: rgb(255, 255, 255);

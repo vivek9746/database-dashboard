@@ -8,6 +8,7 @@ import CombinedCards from './CombinedCards';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import './Allcards.css';
+import Newgraph from '../Chart/Newgraph';
 
 const useStyles = makeStyles((theme) => ({
     // root: {
@@ -24,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
 function Allcards() {
     const classes = useStyles();
     return (
+        <div className="topParent">
         <div className="allcards">
             <Accordion>
         <AccordionSummary
@@ -37,6 +39,9 @@ function Allcards() {
           <CombinedCards/>
         </AccordionDetails>
       </Accordion>
+      <Newgraph/>
+        </div>
+        
         </div>
     )
 }
